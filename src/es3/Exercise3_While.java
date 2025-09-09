@@ -7,7 +7,7 @@ class Exercise3_While {
         Scanner scanner = new Scanner(System.in);
         String input;
 
-        System.out.println("Inserisci una stringa (digita (q) per uscire)");
+        System.out.println("Inserisci una stringa (digita (:q) per uscire)");
 
         while (true) {
             input = scanner.nextLine();
@@ -15,7 +15,7 @@ class Exercise3_While {
             String spaceString = input.replace("", ",");
 
             System.out.println(spaceString);
-            if (input.equals("q")) {
+            if (input.equals(":q")) {
                 break;
             }
 
