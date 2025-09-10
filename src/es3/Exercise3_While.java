@@ -12,14 +12,15 @@ class Exercise3_While {
         while (true) {
             input = scanner.nextLine();
 
-            String spaceString = input.replace("", ",");
-
-            System.out.println(spaceString);
             if (input.equals(":q")) {
                 break;
             }
 
+            String[] Parole = input.split("");
 
+            String ParoleConLaVirgola = String.join(",", Parole);
+
+            System.out.println(ParoleConLaVirgola);
         }
 
         scanner.close();

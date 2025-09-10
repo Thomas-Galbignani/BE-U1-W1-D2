@@ -22,20 +22,15 @@ public class Exercise1_if {
     }
 
     public static boolean annoBisestile(int num) {
-        if (num / 4 == 0) {
+        if (num % 400 == 0) {
             return true;
-        } else if (num / 100 == 0) {
-            return true;
-
-        } else return num / 400 == 0;
+        } else if (num % 100 == 0) {
+            return false;
+        } else return num % 4 == 0;
     }
 
     public boolean stringaPariDispari(String text) {
-        if (text.length() % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return text.length() % 2 == 0;
 
     }
 
